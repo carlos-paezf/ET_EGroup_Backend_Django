@@ -10,22 +10,22 @@
    $: pip install -r requirements.txt
    ```
 
-2. Crear nuevo proyecto:
+2. Levantar contenedor con la base de datos:
+
+   ```txt
+   $: docker-compose up -d
+   ```
+
+3. Crear nuevo proyecto:
 
    ```txt
    $: django-admin startproject app
    ```
 
-3. Crear módulo core para centralizar lógica:
+4. Crear módulo core para centralizar lógica:
 
    ```txt
    $: python manage.py startapp core
-   ```
-
-4. Instalar paquete Pillow para gestión de imágenes:
-
-   ```txt
-   $: python -m pip install Pillow
    ```
 
 5. Generar y correr migraciones para modelos definidos en el core:
