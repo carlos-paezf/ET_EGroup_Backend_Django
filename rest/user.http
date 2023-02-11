@@ -1,0 +1,23 @@
+POST http://127.0.0.1:8000/api/user/create/
+Content-Type: application/json
+
+{
+    "email": "test@mail.com",
+    "password": "123456",
+    "name": "Test User"
+}
+
+#############################################################
+
+POST http://127.0.0.1:8000/api/user/token/
+Content-Type: application/json
+
+{
+    "email": "test@mail.com",
+    "password": "123456"
+}
+
+#############################################################
+
+GET http://127.0.0.1:8000/api/user/me/
+Authorization: token 3fbfbb7eb543ef3272d91f96f1488eef690848a6

@@ -49,3 +49,9 @@
    ```txt
    $: python manage.py startapp user
    ```
+
+8. Ejecutar proyecto:
+
+   ```txt
+   $: python manage.py runserver
+   ```
