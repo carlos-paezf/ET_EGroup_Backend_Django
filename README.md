@@ -43,3 +43,9 @@
    ```txt
    $: python manage.py test
    ```
+
+7. Crear app de usuarios
+
+   ```txt
+   $: python manage.py startapp user
+   ```
