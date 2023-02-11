@@ -55,3 +55,9 @@
    ```txt
    $: python manage.py runserver
    ```
+
+9. Añadir app de productos:
+
+   ```txt
+   $: python manage.py startapp product
+   ```
