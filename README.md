@@ -15,3 +15,15 @@ $: django-admin startproject app
 ```txt
 $: python manage.py startapp core
 ```
+
+```txt
+$: python -m pip install Pillow
+```
+
+```txt
+$: python manage.py makemigrations core
+```
+
+```txt
+$: python manage.py migrate
+```
