@@ -4,26 +4,42 @@
 
 ## Comando usados
 
-```txt
-$: pip install -r requirements.txt
-```
+1. Instalar requerimientos para el proyecto:
 
-```txt
-$: django-admin startproject app
-```
+   ```txt
+   $: pip install -r requirements.txt
+   ```
 
-```txt
-$: python manage.py startapp core
-```
+2. Crear nuevo proyecto:
 
-```txt
-$: python -m pip install Pillow
-```
+   ```txt
+   $: django-admin startproject app
+   ```
 
-```txt
-$: python manage.py makemigrations core
-```
+3. Crear módulo core para centralizar lógica:
 
-```txt
-$: python manage.py migrate
-```
+   ```txt
+   $: python manage.py startapp core
+   ```
+
+4. Instalar paquete Pillow para gestión de imágenes:
+
+   ```txt
+   $: python -m pip install Pillow
+   ```
+
+5. Generar y correr migraciones para modelos definidos en el core:
+
+   ```txt
+   $: python manage.py makemigrations core
+   ```
+
+   ```txt
+   $: python manage.py migrate
+   ```
+
+6. Ejecución de test:
+
+   ```txt
+   $: python manage.py test
+   ```
