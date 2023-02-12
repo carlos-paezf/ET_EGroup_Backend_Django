@@ -61,3 +61,9 @@
    ```txt
    $: python manage.py startapp product
    ```
+
+10. Poblar la base de datos con un seed:
+
+   ```txt
+   $: python manage.py seed core --number=100
+   ```

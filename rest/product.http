@@ -1,0 +1,40 @@
+GET http://127.0.0.1:8000/api/product/products/
+# Authorization: token 794cb2623417c2c6a986100adb4bbf0c9c5d1986
+
+#################################################################
+
+POST http://127.0.0.1:8000/api/product/products/
+Authorization: token 794cb2623417c2c6a986100adb4bbf0c9c5d1986
+Content-Type: application/json
+
+{
+    "title": "Nuevo producto4",
+    "price": 12.99,
+    "description": "Descripción del nuevo producto",
+    "slug": "nuevo-producto-4",
+    "stock": 10,
+    "tags": ["Tag 1", "Tag 2"]
+}
+
+#################################################################
+
+GET http://127.0.0.1:8000/api/product/products/1/
+Authorization: token 794cb2623417c2c6a986100adb4bbf0c9c5d1986
+
+#################################################################
+
+PATCH http://127.0.0.1:8000/api/product/products/1/
+Authorization: token 794cb2623417c2c6a986100adb4bbf0c9c5d1986
+Content-Type: application/json
+
+{
+    "description": "producto actualizado",
+    "slug": "corainder_eggs_on_toast"
+}
+
+#################################################################
+
+DELETE http://127.0.0.1:8000/api/product/products/17/
+Authorization: token 794cb2623417c2c6a986100adb4bbf0c9c5d1986
+
+#################################################################

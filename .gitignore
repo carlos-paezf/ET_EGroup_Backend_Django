@@ -3,3 +3,6 @@
 
 # Docker - Bind Volume
 postgres/
+
+# Cache
+*/**/__pycache__/

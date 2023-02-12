@@ -1,0 +1,220 @@
+[
+    {
+        "description": "Producto 1",
+        "stock": 10,
+        "price": 10.0,
+        "slug": "producto-1",
+        "tags": [
+            "tag1",
+            "tag2"
+        ],
+        "title": "Product 1"
+    },
+    {
+        "description": "Producto 2",
+        "stock": 20,
+        "price": 20.0,
+        "slug": "producto-2",
+        "tags": [
+            "tag1",
+            "tag3"
+        ],
+        "title": "Product 2"
+    },
+    {
+        "description": "Producto 3",
+        "stock": 30,
+        "price": 30.0,
+        "slug": "producto-3",
+        "tags": [
+            "tag2",
+            "tag3"
+        ],
+        "title": "Product 3"
+    },
+    {
+        "description": "Producto 4",
+        "stock": 40,
+        "price": 40.0,
+        "slug": "producto-4",
+        "tags": [
+            "tag4",
+            "tag1"
+        ],
+        "title": "Product 4"
+    },
+    {
+        "description": "Producto 5",
+        "stock": 50,
+        "price": 50.0,
+        "slug": "producto-5",
+        "tags": [
+            "tag2",
+            "tag3"
+        ],
+        "title": "Product 5"
+    },
+    {
+        "description": "Producto 6",
+        "stock": 60,
+        "price": 60.0,
+        "slug": "producto-6",
+        "tags": [
+            "tag1",
+            "tag2"
+        ],
+        "title": "Product 6"
+    },
+    {
+        "description": "Producto 7",
+        "stock": 70,
+        "price": 70.0,
+        "slug": "producto-7",
+        "tags": [
+            "tag3",
+            "tag4"
+        ],
+        "title": "Product 7"
+    },
+    {
+        "description": "Producto 8",
+        "stock": 80,
+        "price": 80.0,
+        "slug": "producto-8",
+        "tags": [
+            "tag1",
+            "tag2"
+        ],
+        "title": "Product 8"
+    },
+    {
+        "description": "Producto 9",
+        "stock": 90,
+        "price": 90.0,
+        "slug": "producto-9",
+        "tags": [
+            "tag3",
+            "tag4"
+        ],
+        "title": "Product 9"
+    },
+    {
+        "description": "Producto 10",
+        "stock": 100,
+        "price": 100.0,
+        "slug": "producto-10",
+        "tags": [
+            "tag2",
+            "tag1"
+        ],
+        "title": "Product 10"
+    },
+    {
+        "description": "producto 10 de la lista de seed",
+        "stock": 10,
+        "price": 100.0,
+        "slug": "producto-10",
+        "tags": [
+            "tag10-1",
+            "tag10-2",
+            "tag10-3"
+        ],
+        "title": "Producto 10"
+    },
+    {
+        "description": "producto 11 de la lista de seed",
+        "stock": 11,
+        "price": 110.0,
+        "slug": "producto-11",
+        "tags": [
+            "tag11-1",
+            "tag11-2",
+            "tag11-3"
+        ],
+        "title": "Producto 11"
+    },
+    {
+        "description": "producto 12 de la lista de seed",
+        "stock": 12,
+        "price": 120.0,
+        "slug": "producto-12",
+        "tags": [
+            "tag12-1",
+            "tag12-2",
+            "tag12-3"
+        ],
+        "title": "Producto 12"
+    },
+    {
+        "description": "producto 13 de la lista de seed",
+        "stock": 13,
+        "price": 130.0,
+        "slug": "producto-13",
+        "tags": [
+            "tag13-1",
+            "tag13-2",
+            "tag13-3"
+        ],
+        "title": "Producto 13"
+    },
+    {
+        "description": "producto 14 de la lista de seed",
+        "stock": 14,
+        "price": 140.0,
+        "slug": "producto-14",
+        "tags": [
+            "tag14-1",
+            "tag14-2",
+            "tag14-3"
+        ],
+        "title": "Producto 14"
+    },
+    {
+        "description": "producto 15 de la lista de seed",
+        "stock": 15,
+        "price": 150.0,
+        "slug": "producto-15",
+        "tags": [
+            "tag15-1",
+            "tag15-2",
+            "tag15-3"
+        ],
+        "title": "Producto 15"
+    },
+    {
+        "description": "producto 16 de la lista de seed",
+        "stock": 16,
+        "price": 160.0,
+        "slug": "producto-16",
+        "tags": [
+            "tag16-1",
+            "tag16-2",
+            "tag16-3"
+        ],
+        "title": "Producto 16"
+    },
+    {
+        "description": "producto 17 de la lista de seed",
+        "stock": 17,
+        "price": 170.0,
+        "slug": "producto-17",
+        "tags": [
+            "tag17-1",
+            "tag17-2",
+            "tag17-3"
+        ],
+        "title": "Producto 17"
+    },
+    {
+        "description": "producto 18 de la lista de seed",
+        "stock": 18,
+        "price": 180.0,
+        "slug": "producto-18",
+        "tags": [
+            "tag18-1",
+            "tag18-2",
+            "tag18-3"
+        ],
+        "title": "Producto 18"
+    }
+]

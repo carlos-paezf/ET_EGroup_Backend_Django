@@ -39,15 +39,6 @@ class ModelTest(TestCase):
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
 
-    def test_tag_str(self):
-        """ > Probar representación en cadena de texto del tag """
-        tag = models.Tag.objects.create(
-            name='New',
-            user=sample_user()
-        )
-
-        self.assertEqual(str(tag), tag.name)
-
     def test_product_str(self):
         """ > Probar representación en cadena de texto del producto """
         product = models.Product.objects.create(

@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'core',
     'user',
     'product',
+    'django_seed',
+
 ]
 
 MIDDLEWARE = [
