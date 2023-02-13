@@ -1,17 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
-from django.conf import settings
-from django.contrib.postgres.fields import ArrayField
-import uuid
-import os
-
-
-def product_image_file_path(instance, filename):
-    """ Generar el file path para la imagen del producto """
-    ext = filename.split('.')[-1]
-    filename = f'{uuid.uuid4()}.{ext}'
-
-    return os.path.join('uploads/recipes/', filename)
 
 
 class UserManager(BaseUserManager):
@@ -52,33 +40,3 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name = 'user'
         verbose_name_plural = 'users'
-
-
-class Product(models.Model):
-    """ Modelo para productos """
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        editable=False
-    )
-    title = models.CharField(max_length=255, unique=True)
-    price = models.DecimalField(max_digits=5, decimal_places=2)
-    description = models.TextField(max_length=500)
-    slug = models.SlugField(unique=True)
-    stock = models.IntegerField()
-    tags = ArrayField(
-        models.CharField(max_length=100),
-        blank=True,
-        default=list
-    )
-    image = models.ImageField(
-        upload_to=product_image_file_path, null=True)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.title
-
-    class Meta:
-        verbose_name = 'product'
-        verbose_name_plural = 'products'

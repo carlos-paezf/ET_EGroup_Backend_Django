@@ -3,9 +3,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.response import Response
 from rest_framework.decorators import action
-from core.models import Product
+from product.models import Product
 from product import serializers
-import json
 
 
 class ProductViewSet(viewsets.ModelViewSet):

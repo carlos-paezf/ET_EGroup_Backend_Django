@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from core.models import Product
 from django.utils import timezone
+from product.models import Product
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -13,7 +13,8 @@ class ProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = (
             'id', 'title', 'price', 'description',
-            'slug', 'stock', 'tags', 'image', 'user', 'created', 'updated',
+            'slug', 'stock', 'tags', 'image', 'rating',
+            'user', 'created', 'updated',
         )
         read_only_fields = ('id',)
 

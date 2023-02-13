@@ -6,64 +6,84 @@
 
 1. Instalar requerimientos para el proyecto:
 
-   ```txt
-   $: pip install -r requirements.txt
-   ```
+    ```txt
+    $: pip install -r requirements.txt
+    ```
 
 2. Levantar contenedor con la base de datos:
 
-   ```txt
-   $: docker-compose up -d
-   ```
+    ```txt
+    $: docker-compose up -d
+    ```
 
 3. Crear nuevo proyecto:
 
-   ```txt
-   $: django-admin startproject app
-   ```
+    ```txt
+    $: django-admin startproject app
+    ```
 
 4. Crear módulo core para centralizar lógica:
 
-   ```txt
-   $: python manage.py startapp core
-   ```
+    ```txt
+    $: python manage.py startapp core
+    ```
 
 5. Generar y correr migraciones para modelos definidos en el core:
 
-   ```txt
-   $: python manage.py makemigrations core
-   ```
+    ```txt
+    $: python manage.py makemigrations core
+    ```
 
-   ```txt
-   $: python manage.py migrate
-   ```
+    ```txt
+    $: python manage.py migrate
+    ```
 
 6. Ejecución de test:
 
-   ```txt
-   $: python manage.py test
-   ```
+    ```txt
+    $: python manage.py test
+    ```
 
 7. Crear app de usuarios
 
-   ```txt
-   $: python manage.py startapp user
-   ```
+    ```txt
+    $: python manage.py startapp user
+    ```
 
-8. Ejecutar proyecto:
+8. Crear SuperUsuario:
 
-   ```txt
-   $: python manage.py runserver
-   ```
+    ```txt
+    $: python manage.py createsuperuser
+    ```
 
-9. Añadir app de productos:
+    En este caso use el correo `superuser@email.com` y de contraseña `super_password`.
 
-   ```txt
-   $: python manage.py startapp product
-   ```
+9. Ejecutar proyecto:
 
-10. Poblar la base de datos con un seed:
+    ```txt
+    $: python manage.py runserver
+    ```
 
-   ```txt
-   $: python manage.py seed core --number=100
-   ```
+10. Añadir app de productos:
+
+    ```txt
+    $: python manage.py startapp product
+    ```
+
+11. Poblar la base de datos con un seed:
+
+    ```txt
+    $: python manage.py seed product --number=100
+    ```
+
+12. Construir imagen del proyecto:
+
+    ```txt
+    $: docker build -t et-egroup .
+    ```
+
+13. Levantar docker-compose para proyecto en producción:
+
+    ```txt
+    $: docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+    ```

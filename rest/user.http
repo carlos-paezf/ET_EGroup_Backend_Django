@@ -20,4 +20,21 @@ Content-Type: application/json
 #############################################################
 
 GET http://127.0.0.1:8000/api/user/me/
-Authorization: token 794cb2623417c2c6a986100adb4bbf0c9c5d1986
+Authorization: token d3cb0507ba05db2416e8a8e07ab1072ab0c56a4d
+
+#############################################################
+
+POST http://127.0.0.1:8000/api/user/token/
+Content-Type: application/json
+
+{
+    "email": "superuser@email.com",
+    "password": "super_password"
+}
+
+#############################################################
+
+GET http://127.0.0.1:8000/api/user/me/
+Authorization: token 5cba3ae4e8fcb65d4a689700ffd7dbeddccc33f9
+
+#############################################################

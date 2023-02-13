@@ -1,5 +1,6 @@
 # Enviroment variables
 .env
+.env.prod
 
 # Docker - Bind Volume
 postgres/
