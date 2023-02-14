@@ -5,6 +5,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils.text import slugify
 import uuid
 import os
+import random
 
 
 def product_image_file_path(instance, filename):
@@ -23,7 +24,7 @@ class Product(models.Model):
         editable=False
     )
     title = models.CharField(max_length=255, unique=True)
-    price = models.DecimalField(max_digits=5, decimal_places=2, validators=[
+    price = models.DecimalField(max_digits=9, decimal_places=2, validators=[
         MinValueValidator(0)
     ])
     description = models.TextField(max_length=500)
@@ -49,6 +50,12 @@ class Product(models.Model):
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
+        self.stock = abs(self.stock)
+
+        # TODO: Descartar siguientes 2 líneas en producción (solo se usan para personalizar el seed)
+        self.rating = round(random.uniform(0, 5), 2)
+        self.price = round(random.uniform(1_000, 1_000_000), 2)
+
         super(Product, self).save(*args, **kwargs)
 
     class Meta:

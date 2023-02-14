@@ -84,7 +84,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     @action(methods=['GET'], detail=False, url_path="top")
     def list_top_5(self, request):
         """ Listar el top 5 de productos mejor calificados """
-        products = Product.objects.order_by('-rating').order_by('-created')[:5]
+        products = Product.objects.order_by('-rating')[:5]
         serializer = self.serializer_class(products, many=True)
         return Response(serializer.data)
 
