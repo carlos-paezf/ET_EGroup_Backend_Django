@@ -1,10 +1,20 @@
 GET http://127.0.0.1:8000/api/product/products/
-# Authorization: token 5cba3ae4e8fcb65d4a689700ffd7dbeddccc33f9
+# Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
+
+#################################################################
+
+GET http://127.0.0.1:8000/api/product/products/?page=3
+# Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
+
+#################################################################
+
+GET http://127.0.0.1:8000/api/product/products/top/
+Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
 
 #################################################################
 
 POST http://127.0.0.1:8000/api/product/products/
-Authorization: token 5cba3ae4e8fcb65d4a689700ffd7dbeddccc33f9
+Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
 Content-Type: application/json
 
 {
@@ -20,12 +30,17 @@ Content-Type: application/json
 #################################################################
 
 GET http://127.0.0.1:8000/api/product/products/1/
-Authorization: token 5cba3ae4e8fcb65d4a689700ffd7dbeddccc33f9
+Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
+
+#################################################################
+
+GET http://127.0.0.1:8000/api/product/products/somebody-national-world-wife-give-hand-perform/
+# Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
 
 #################################################################
 
 PATCH http://127.0.0.1:8000/api/product/products/1/
-Authorization: token 5cba3ae4e8fcb65d4a689700ffd7dbeddccc33f9
+Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
 Content-Type: application/json
 
 {
@@ -36,6 +51,6 @@ Content-Type: application/json
 #################################################################
 
 DELETE http://127.0.0.1:8000/api/product/products/1/
-Authorization: token 5cba3ae4e8fcb65d4a689700ffd7dbeddccc33f9
+Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
 
 #################################################################

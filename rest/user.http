@@ -35,6 +35,6 @@ Content-Type: application/json
 #############################################################
 
 GET http://127.0.0.1:8000/api/user/me/
-Authorization: token 5cba3ae4e8fcb65d4a689700ffd7dbeddccc33f9
+Authorization: token 8d15daf815f020d7fd883ad5da0a9c8c956c9cea
 
 #############################################################
