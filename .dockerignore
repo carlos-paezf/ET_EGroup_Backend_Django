@@ -1,0 +1,9 @@
+.git/
+*/**/__pycache__/
+rest/
+# postgres/
+
+Dockerfile
+.env
+.env.template
+docker-compose.**

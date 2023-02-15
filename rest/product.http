@@ -3,7 +3,7 @@ GET http://127.0.0.1:8000/api/product/products/
 
 #################################################################
 
-GET http://127.0.0.1:8000/api/product/products/?page=3
+GET http://127.0.0.1:8000/api/product/products/?page=6
 # Authorization: token c7f8d210c68593812c48aaad78199d7530c8cc22
 
 #################################################################
